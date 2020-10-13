@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import {Route, BrowserRouter as Router} from 'react-router-dom'; 
 import * as serviceWorker from './serviceWorker';
 
+import './index.css';
+
 import Home from "./views/Home";
 
 const routes = (

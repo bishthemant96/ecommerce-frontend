@@ -1,7 +1,116 @@
-.container {
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    height: 10vh;
+    width: 100%;
+
+    font-weight: 900;
+    background-color: #484d4f;
+    color: white;
+}
+
+.header-categories{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 15%;
+    height: 100%;
+
+    border-right: 1px solid white;
+    box-sizing: border-box;
+}
+
+.header-products {
+    width: 85%;
+    text-align: center;
+}
+.shop-container {
     display: flex;
     flex-wrap: wrap;
 
-    max-width: 50%;
-    margin: auto;
+    overflow-y: hidden;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.categories {
+    width: 15%;
+    min-width: 150px;
+    height: 90vh;
+
+    margin-top: ;
+
+    color: #303030;
+    font-weight: 500;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 85%;
+    height: 90vh;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.default-message {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Pagination Stylinh */
+.pagination-wrapper{
+    align-self: flex-end;
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    max-height: 30px;
+    width: 100%;
+    padding: 0% 30%;
+    justify-self: center;
+    list-style: none;
+
+}
+
+ul.pagination-wrapper li {
+  display: inline-block;
+  width: 60px;
+  border: 1px solid #484d4f;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+ul.pagination-wrapper li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+ul.pagination-wrapper li.active a {
+  color: white;
+}
+ul.pagination-wrapper li.active {
+  background-color: #484d4f;
+}
+
+ul.pagination-wrapper li a:hover,
+ul.pagination-wrapper li a.active {
+  color: #484d4f;
 }
